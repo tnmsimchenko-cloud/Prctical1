@@ -5,12 +5,20 @@ void main() {
   print("Введите оператор (+, -, *, /, ~/, %, pow):");
   String ok = stdin.readLineSync()!;
 
-  switch (ok) { case '+': case '-': case '*': case '/': case '~/': case '%': case 'pow':
+  switch (ok) {
+    case '+':
+    case '-':
+    case '*':
+    case '/':
+    case '~/':
+    case '%':
+    case 'pow':
       break;
     default:
       print("Неизвестный оператор!");
       return;
   }
+
 
   print("Введите число 1:");
   double num1 = double.parse(stdin.readLineSync()!);
