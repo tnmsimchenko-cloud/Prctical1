@@ -5,14 +5,7 @@ void main() {
   print("Введите оператор (+, -, *, /, ~/, %, pow):");
   String ok = stdin.readLineSync()!;
 
-  switch (ok) {
-    case '+':
-    case '-':
-    case '*':
-    case '/':
-    case '~/':
-    case '%':
-    case 'pow':
+  switch (ok) { case '+': case '-': case '*': case '/': case '~/': case '%': case 'pow':
       break;
     default:
       print("Неизвестный оператор!");
